@@ -267,4 +267,27 @@ with right:
     st.subheader("Enunciado del ejercicio")
     st.text_area("Texto", statement, height=560)
 
-
+st.markdown(
+    """
+    <style>
+      .app-footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background: rgba(255,255,255,0.9);
+        border-top: 1px solid rgba(0,0,0,0.08);
+        padding: 8px 16px;
+        font-size: 12px;
+        color: rgba(0,0,0,0.65);
+        z-index: 1000;
+      }
+      /* evita que el footer tape contenido */
+      .block-container { padding-bottom: 60px; }
+    </style>
+    <div class="app-footer">
+      Desarrollado por <strong>Dr. Christian Franco Crespo</strong> — Generador de dataset y enunciado para ejercicios MANOVA
+    </div>
+    """,
+    unsafe_allow_html=True
+)
